@@ -25,7 +25,7 @@ function init() {
   container = document.createElement('div');
   document.body.appendChild(container);
   scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2( 0xcccccc, 0.0001 );
+  scene.fog = new THREE.FogExp2( 0xcccccc, 0.00005 );
   renderer = new THREE.WebGLRenderer();
   renderer.setClearColor( scene.fog.color );
   renderer.setPixelRatio( window.devicePixelRatio );
