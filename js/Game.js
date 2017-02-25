@@ -36,6 +36,7 @@ function init() {
 
   controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.enableZoom = true;
+  controls.enablePan = false;
     img = new Image();
     img.onload = function () {
       data = getHeightData(img);
